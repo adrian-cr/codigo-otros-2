@@ -1,9 +1,9 @@
-var formulario = document.querySelector("form") //Se cambió el nombre del argumento '#form' a 'form'
+var formulario = document.querySelector("form") //Se cambió el nombre del argumento '#form' a 'form'.
 
 formulario.onsubmit = function(e) {
 
   e.preventDefault(); //Se modificó el nombre de la función 'prevent()' a 'preventDefault()'.
-  /*Se modificaron los nombres de variables de las siguientes tres líneas por 'elementoNombre', 'elementoEdad' y 'elementoNacionalidad', respectivamente.*/
+  /*Se modificaron los nombres de variables de las siguientes tres líneas por 'elementoNombre', 'elementoEdad' y 'elementoNacionalidad', respectivamente para mejor legibilidad.*/
   var elementoNombre = formulario.elements[0]
   var elementoEdad = formulario.elements[1]
   var elementoNacionalidad = formulario.elements[2]
@@ -41,7 +41,7 @@ botonBorrar.id = "boton-borrar" */
 
 var corteLinea = document.createElement("br")
 document.body.appendChild(corteLinea)
-document.body.appendChild(botonBorrar);
+// document.body.appendChild(botonBorrar); //Se omite la referencia al elemento comentado anteriormente ('botonBorrar').
 
 function agregarInvitado(nombre, edad, nacionalidad) {
 
